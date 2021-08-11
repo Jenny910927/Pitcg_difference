@@ -32,12 +32,19 @@ python generate_dataset.py [output pkl]
 ```
 python train.py [input training dataset] [input validayion dataset]
 ```
-<!-- 修改train.py裡**from predictor_1 import PitchDiffPredictor** -->
   
-
 `from predictor_1 import PitchDiffPredictor`  
 這裡提供三種predictor：
   * predictor_1: loss只有使用L1 loss，計算實際與預測的差距
   * predictor_2: loss加上delta(相鄰frame之間預測出來的音高差距(一次微分))
-  * predictor_3: loss加上delta和delta_2(delta的微分(二次微分))
+  * predictor_3: loss加上delta和delta_2(delta的微分(二次微分))  
+  
+以及兩種net:
+  * net_RNN_0807: 由2層RNN組成，中間用雙曲函數(torch.nn.functional.tanh)連接
+  * net_RNN_position_embedding: score_pitch先經過position embedding，再train
 
+
+## Dataset
+提供原音檔(均由Youtube下載)與轉譜後的json檔，以及組成dataset的Pickle檔  
+其中train.pkl由19首歌組成、val.pkl由1首歌組成(歌手均為日本唱見そらる(soraru)演唱)
+https://drive.google.com/drive/folders/1CRuiremCjD-T6WuluLnAmplHWAWggywz?usp=sharing  
