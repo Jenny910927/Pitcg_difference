@@ -1,0 +1,8 @@
+torch
+librosa
+spleeter==1.5.4
+soundfile
+tqdm
+mido
+ffmpeg-python
+torchcrepe
