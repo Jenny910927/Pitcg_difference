@@ -178,7 +178,7 @@ class PitchDiffPredictor():
                     loss = torch.sum(loss) / sum(is_inlier)
                     loss_delta = np.sum(loss_delta)/sum(is_inlier)
 
-                    total_train_loss = total_train_loss + loss.item() + loss_delta.item()
+                    total_val_loss = total_val_loss + loss.item() + loss_delta.item()
                     
 
 
