@@ -47,5 +47,5 @@ python train.py [input training dataset] [input validayion dataset]
 
 ## Dataset
 提供原音檔(均由Youtube下載)與轉譜後的json檔，以及組成dataset的Pickle檔  
-其中train.pkl由19首歌組成、val.pkl由1首歌組成(歌手均為日本唱見そらる(soraru)演唱)
+其中train.pkl由19首歌組成、val.pkl / val_2.pkl各由1首歌組成(歌手均為日本唱見そらる(soraru)演唱)
 https://drive.google.com/drive/folders/1CRuiremCjD-T6WuluLnAmplHWAWggywz?usp=sharing  
