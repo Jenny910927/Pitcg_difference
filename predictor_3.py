@@ -198,7 +198,7 @@ class PitchDiffPredictor():
                     loss_delta = np.sum(loss_delta)/sum(is_inlier)
                     loss_delta_2 = np.sum(loss_delta_2)/sum(is_inlier)
 
-                    total_train_loss = total_train_loss + loss.item() + loss_delta.item() + loss_delta_2.item()
+                    total_val_loss = total_val_loss + loss.item() + loss_delta.item() + loss_delta_2.item()
                     
 
 
