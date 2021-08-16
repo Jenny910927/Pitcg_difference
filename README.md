@@ -22,7 +22,7 @@ python generate_dataset.py [output pkl]
 此dataset所含資料：
   * features
   * score_pitch (note)
-  * pitch_diff (人聲實際音高與樂譜的音高差)
+  * pitch_diff (人聲實際音高與樂譜的音高差) **應該要去掉此項**
   * is_inlier (是否有差異過大的現象(主要是避免轉譜錯誤)，這裡設定pitch_diff>3者為False)
   * former_note (前一個note)
   * next_note (後一個note)
