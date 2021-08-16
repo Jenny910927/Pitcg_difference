@@ -1,5 +1,6 @@
 # Pitch_difference
 ## Extract pitch and notes
+(in ST_and_pitch folder)
 ```
 pip install -r requirement.txt
 ```
